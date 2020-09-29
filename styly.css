@@ -25,6 +25,13 @@ body {
   width: 450px;
   background-color: #283e50;
   border-radius: 7px 7px 0 0;
+  margin: 50px 0;
+}
+
+.container--s {
+  width: 350px;
+  font-size: 16px;
+  padding-top: 20px;
 }
 
 .headerImage {
@@ -42,7 +49,7 @@ body {
   font-family: 'Lobster', cursive;
   font-size: 3em;
   font-weight: normal;
-  margin: 0;
+  margin: 20px 0;
 }
 
 .buttons {
@@ -78,4 +85,35 @@ body {
 .buttons__link--blue:hover,
 .buttons__link--blue:focus {
   background-color: #0090e9;
+}
+
+.rules {
+  text-align: left;
+  list-style-type: decimal;
+  margin: 30px;
+}
+
+.rules__item {
+  padding: 5px;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.icon--white {
+  filter: invert(100%);
+}
+
+.situations__bloc {
+  margin: 30px;
+}
+
+.situations__image {
+  width: 100%;
+}
+
+.situations__text {
+  font-style: italic;
 }

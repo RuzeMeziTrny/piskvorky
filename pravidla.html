@@ -10,5 +10,121 @@
     />
     <link rel="stylesheet" href="styly.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1 class="heading">Pravidla</h1>
+      <ul class="rules">
+        <li class="rules__item">Hra piškvorky je určena pro dva hráče.</li>
+        <li class="rules__item">
+          Hraje se na hrací ploše 10×10, tvořené poli ve tvaru čtverce.
+        </li>
+        <li class="rules__item">
+          Na začátku si hráči rozdělí role. Jeden bude hrát za kolečka, druhý
+          bude hrát za křížky.
+        </li>
+        <li class="rules__item">
+          Losem se určí, kdo bude začínat. V naší aplikaci to vylosujeme za vás.
+        </li>
+        <li class="rules__item">Hráči se střídají v tazích.</li>
+        <li class="rules__item">
+          Hráč, který je na tahu, umístí jeden ze svých symbolů na prázdné pole
+          na hrací ploše. Tj. hráč hrající za křížky umístí křížek, hráč hrající
+          za kolečka umístí kolečko.
+        </li>
+        <li class="rules__item">
+          Křížky a kolečka se umisťují dovnitř políček na hrací ploše.
+        </li>
+        <li class="rules__item">
+          Hráč, který umístí pět svých symbolů do jedné řady, vyhrává.
+        </li>
+        <li class="rules__item">
+          Výherní kombinací se rozumí pět symbolů ve směru vodorovném, svislém
+          nebo šikmém. Mezi pěti symboly tvořícími výherní kombinaci nesmí být
+          žádné prázdné pole ani pole obsazené soupeřovým symbolem.
+        </li>
+        <li class="rules__item">
+          Pokud hráči zaplní celou desku, aniž by někdo umístil pět svých
+          symbolů do jedné řady, hra končí remízou.
+        </li>
+      </ul>
+
+      <div class="situations">
+        <figure class="situations__bloc">
+          <img
+            class="situations__image"
+            src="images/instructions-01.jpg"
+            alt="herní situace 1"
+          />
+          <figcaption class="situations__text">
+            Situace po třech tazích - na tahu je hráč s kolečky
+          </figcaption>
+        </figure>
+        <figure class="situations__bloc">
+          <img
+            class="situations__image"
+            src="images/instructions-02.jpg"
+            alt="herní situace 2"
+          />
+          <figcaption class="situations__text">
+            Situace po čtyřech tazích
+          </figcaption>
+        </figure>
+        <figure class="situations__bloc">
+          <img
+            class="situations__image"
+            src="images/instructions-03.jpg"
+            alt="herní situace 3"
+          />
+          <figcaption class="situations__text">
+            Výherní pozice hráče s kolečky
+          </figcaption>
+        </figure>
+        <figure class="situations__bloc">
+          <img
+            class="situations__image"
+            src="images/instructions-04.jpg"
+            alt="herní situace 4"
+          />
+          <figcaption class="situations__text">
+            V této situaci nikdo nevyhrává. Pokud je na tahu hráč s kolečky,
+            může přidat další kolečko do šikmé řady, kde už má 4 kolečka, a
+            vyhraje.
+          </figcaption>
+        </figure>
+        <figure class="situations__bloc">
+          <img
+            class="situations__image"
+            src="images/instructions-05.jpg"
+            alt="herní situace 5"
+          />
+          <figcaption class="situations__text">
+            Výherní pozice hráče s křížky
+          </figcaption>
+        </figure>
+        <figure class="situations__bloc">
+          <img
+            class="situations__image"
+            src="images/instructions-06.jpg"
+            alt="herní situace 6"
+          />
+          <figcaption class="situations__text">
+            Ještě jedna výherní pozice hráče s kolečky
+          </figcaption>
+        </figure>
+      </div>
+
+      <ul class="buttons">
+        <li class="buttons__item">
+          <a class="buttons__link buttons__link--green" href="index.html"
+            >Úvodní stránka</a
+          >
+        </li>
+        <li class="buttons__item">
+          <a class="buttons__link buttons__link--blue" href="index.html"
+            >Začít hrát</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>

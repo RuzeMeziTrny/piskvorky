@@ -25,7 +25,7 @@ body {
   box-shadow: 2px 1px 5px 1px rgba(165, 165, 165, 0.5);
 }
 
-.image {
+.headerImage {
   width: 100%;
   display: block;
   border-top-right-radius: 2%;
@@ -39,13 +39,13 @@ body {
 }
 
 .heading {
-  font-family: "Lobster", cursive;
+  font-family: 'Lobster', cursive;
   font-size: 3em;
   font-weight: normal;
   margin: 0;
 }
 
-.buttons__list {
+.buttons {
   margin: 0;
   padding: 0;
   text-align: center;

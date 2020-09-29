@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
   color: #fff;
   line-height: 1.5;
+  text-align: center;
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -22,19 +23,18 @@ body {
 
 .container {
   width: 450px;
-  box-shadow: 2px 1px 5px 1px rgba(165, 165, 165, 0.5);
+  background-color: #283e50;
+  border-radius: 7px 7px 0 0;
 }
 
 .headerImage {
   width: 100%;
   display: block;
-  border-top-right-radius: 2%;
-  border-top-left-radius: 2%;
+  border-radius: 7px 7px 0 0;
 }
 
 .text {
   background-color: #283e50;
-  text-align: center;
   padding: 15px;
 }
 
@@ -48,7 +48,6 @@ body {
 .buttons {
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .buttons__item {
@@ -68,7 +67,7 @@ body {
 }
 
 .buttons__link--green:hover,
-.buttons__link--green:active {
+.buttons__link--green:focus {
   background-color: #1cbb96;
 }
 
@@ -77,6 +76,6 @@ body {
 }
 
 .buttons__link--blue:hover,
-.buttons__link--blue:active {
+.buttons__link--blue:focus {
   background-color: #0090e9;
 }

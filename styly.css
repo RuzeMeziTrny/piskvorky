@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
 /* 
 Gradient v pozadí jde z fialové #615dad do růžové #ffc8da.
 Barva textu #ffffff.
@@ -106,8 +115,13 @@ body {
   filter: invert(100%);
 }
 
+.situations {
+  padding: 0 15px;
+}
+
 .situations__bloc {
-  margin: 30px;
+  margin: 0;
+  padding: 15px;
 }
 
 .situations__image {
@@ -117,4 +131,30 @@ body {
 .situations__text {
   font-style: italic;
   line-height: 1.2;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 700px) {
+  .container--pravidla {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+  }
+
+  .rules {
+    margin-top: 0;
+  }
+
+  .situations {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .situations__bloc {
+    flex-basis: 50%;
+  }
+
+  .situations__text {
+    font-size: 12px;
+  }
 }

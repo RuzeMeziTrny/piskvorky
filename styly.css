@@ -22,15 +22,14 @@ body {
 }
 
 .container {
-  width: 450px;
+  width: 350px;
   background-color: #283e50;
   border-radius: 7px 7px 0 0;
   margin: 50px 0;
+  font-size: 16px;
 }
 
-.container--s {
-  width: 350px;
-  font-size: 16px;
+.pt {
   padding-top: 20px;
 }
 
@@ -42,14 +41,14 @@ body {
 
 .text {
   background-color: #283e50;
-  padding: 15px;
+  padding: 5px;
 }
 
 .heading {
   font-family: 'Lobster', cursive;
   font-size: 3em;
   font-weight: normal;
-  margin: 20px 0;
+  margin: 16px 0;
 }
 
 .buttons {
@@ -95,6 +94,7 @@ body {
 
 .rules__item {
   padding: 5px;
+  line-height: 1.2;
 }
 
 .icon {
@@ -116,4 +116,5 @@ body {
 
 .situations__text {
   font-style: italic;
+  line-height: 1.2;
 }

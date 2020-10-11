@@ -73,7 +73,7 @@ body {
   display: block;
   color: #fff;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
 }
 
 .buttons__link--green {
@@ -94,6 +94,8 @@ body {
 .buttons__link--blue:focus {
   background-color: #0090e9;
 }
+
+/* styles for Pravidla */
 
 .rules {
   text-align: left;
@@ -158,3 +160,8 @@ body {
     font-size: 12px;
   }
 }
+
+/* styles for Hra */
+
+/* Hlavnímu obsahu nastav maximální šířku pomocí max-width: 80vmin */
+/*  Po najetí myši na button by se měl lehce rozsvítit. */

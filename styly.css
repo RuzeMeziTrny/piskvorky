@@ -76,9 +76,12 @@ body {
   padding: 10px;
 }
 
+.buttons__link--border {
+  border-bottom: 1px solid #283e50;
+}
+
 .buttons__link--green {
   background-color: #1fcca4;
-  border-bottom: 1px solid #283e50;
 }
 
 .buttons__link--green:hover,
@@ -108,12 +111,12 @@ body {
   line-height: 1.2;
 }
 
-.icon {
+.symbol {
   width: 1em;
   height: 1em;
 }
 
-.icon--white {
+.symbol--white {
   filter: invert(100%);
 }
 
@@ -161,7 +164,48 @@ body {
   }
 }
 
+
 /* styles for Hra */
 
-/* Hlavnímu obsahu nastav maximální šířku pomocí max-width: 80vmin */
-/*  Po najetí myši na button by se měl lehce rozsvítit. */
+.container--hra {
+  max-width: 80vmin;
+}
+
+.heading--gameplan {
+  font-size: 3.5em;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls__text {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.circle {
+  border: 3px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  transform: translateY(0.1em);
+}
+
+.buttons__icon {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.icon {
+  padding: 10px;
+  margin: 2px;
+  border-radius: 3px;
+  width: 2.5em;
+  height: 2.5em;
+}

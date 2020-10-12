@@ -1,11 +1,11 @@
 html {
   box-sizing: border-box;
 }
-/* *,
+*,
 :after,
 :before {
   box-sizing: inherit;
-} */
+}
 
 /* 
 Gradient v pozadí jde z fialové #615dad do růžové #ffc8da.
@@ -169,6 +169,7 @@ body {
 
 .container--hra {
   max-width: 80vmin;
+  margin-bottom: 50px;
 }
 
 .heading--gameplan {
@@ -192,9 +193,9 @@ body {
   border: 3px solid white;
   border-radius: 50%;
   display: inline-block;
-  width: 0.8em;
-  height: 0.8em;
-  transform: translateY(3px);
+  width: 1em;
+  height: 1em;
+  transform: translateY(2px);
 }
 
 .buttons__icon {
@@ -206,8 +207,8 @@ body {
   padding: 10px;
   margin: 2px;
   border-radius: 3px;
-  width: 1.3em;
-  height: 1.3em;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 .game-plan {

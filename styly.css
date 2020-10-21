@@ -234,6 +234,8 @@ body {
   background-image: url(images/circle.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  animation-name: circle-cross-animation;
+  animation-duration: 0.2s;
 }
 
 .game-field--cross::before {
@@ -245,4 +247,11 @@ body {
   background-image: url(images/cross.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  animation-name: circle-cross-animation;
+  animation-duration: 0.2s;
+}
+
+@keyframes circle-cross-animation {
+  from {transform: scale(0.1);}
+  to {transform: scale(1);}
 }

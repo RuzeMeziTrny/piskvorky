@@ -164,7 +164,6 @@ body {
   }
 }
 
-
 /* styles for Hra */
 
 .container--hra {
@@ -189,10 +188,7 @@ body {
   font-size: 1.2em;
 }
 
-.circle {
-  border: 3px solid white;
-  border-radius: 50%;
-  display: inline-block;
+.circle-cross {
   width: 1em;
   height: 1em;
   transform: translateY(2px);
@@ -220,10 +216,33 @@ body {
   border: 1px solid black;
   width: 8vmin;
   height: 8vmin;
-  opacity: 0.4;
+  padding: 0px;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
 }
 
 .game-plan button:hover,
 .game-plan button:focus {
-  opacity: 0.6;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+
+.game-field--circle::before {
+  content: "";
+  display: block;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  background-image: url(images/circle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game-field--cross::before {
+  content: "";
+  display: block;
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  background-image: url(images/cross.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

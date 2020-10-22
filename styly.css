@@ -228,8 +228,8 @@ body {
 .game-field--circle::before {
   content: "";
   display: block;
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 80%;
   margin: auto;
   background-image: url(images/circle.svg);
   background-repeat: no-repeat;
@@ -241,8 +241,8 @@ body {
 .game-field--cross::before {
   content: "";
   display: block;
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 80%;
   margin: auto;
   background-image: url(images/cross.svg);
   background-repeat: no-repeat;

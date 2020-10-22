@@ -18,9 +18,11 @@ const changePlayer = () => {
 const addSymbol = (event) => {
   event.target.classList.add(`game-field--${whoPlays}`);
   event.target.disabled = true;
-  changePlayer();
 };
 
 for (let i = 0; i < gameField.length; i++) {
-  gameField[i].addEventListener('click', addSymbol);
+  gameField[i].addEventListener('click', (event) => {
+    addSymbol(event);
+    changePlayer();
+  });
 }

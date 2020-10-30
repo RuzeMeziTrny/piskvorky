@@ -3,7 +3,12 @@
 let whoPlays = 'circle';
 
 const circleCross = document.querySelector('.circle-cross');
-const gameField = document.querySelectorAll('.game-plan button');
+const gameFields = document.querySelectorAll('.game-plan button');
+
+const addSymbol = (event) => {
+  event.target.classList.add(`game-field--${whoPlays}`);
+  event.target.disabled = true;
+};
 
 const changePlayer = () => {
   if (whoPlays === 'circle') {
@@ -15,13 +20,31 @@ const changePlayer = () => {
   circleCross.alt = `icon ${whoPlays}`;
 };
 
-const addSymbol = (event) => {
-  event.target.classList.add(`game-field--${whoPlays}`);
-  event.target.disabled = true;
+const boardSize = 10;
+
+const getPosition = (field) => {
+  for (let i = 0; i < gameFields.length; i++) {
+    if (field === gameFields[i]) {
+      return {
+        row: Math.floor(i / boardSize),
+        column: fieldIndex % boardSize,
+      };
+    }
+  }
 };
 
-for (let i = 0; i < gameField.length; i++) {
-  gameField[i].addEventListener('click', (event) => {
+const getField = (row, column) => {
+  return gameFields[row * boardSize + column];
+};
+
+const getSymbol = (field) => {
+  if (field.className === `game-field--${whoPlays}`) {
+    return whoPlays;
+  }
+};
+
+for (let i = 0; i < gameFields.length; i++) {
+  gameFields[i].addEventListener('click', (event) => {
     addSymbol(event);
     changePlayer();
   });

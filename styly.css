@@ -28,6 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -217,16 +218,22 @@ body {
   width: 8vmin;
   height: 8vmin;
   padding: 0px;
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.4)
+  );
 }
 
 .game-plan button:hover,
 .game-plan button:focus {
-  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  );
 }
 
 .game-field--circle::before {
-  content: "";
+  content: '';
   display: block;
   height: 80%;
   width: 80%;
@@ -239,7 +246,7 @@ body {
 }
 
 .game-field--cross::before {
-  content: "";
+  content: '';
   display: block;
   height: 80%;
   width: 80%;
@@ -252,6 +259,10 @@ body {
 }
 
 @keyframes circle-cross-animation {
-  from {transform: scale(0.1);}
-  to {transform: scale(1);}
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
 }

@@ -97,20 +97,79 @@ const isWinningMove = (field) => {
     return true;
   }
 
+  // Koukni doleva nahoru
+  let inDiagonal = 1;
+  let row = origin.row;
+  let column = origin.column;
+  while (
+    column > 0 &&
+    row > 0 &&
+    symbol === getSymbol(getField(row - 1, column - 1))
+  ) {
+    inDiagonal++;
+    column--;
+    row--;
+  }
+
+  // Koukni doprava dolu
+  row = origin.row;
+  column = origin.column;
+  while (
+    column < boardSize - 1 &&
+    row < boardSize - 1 &&
+    symbol === getSymbol(getField(row + 1, column + 1))
+  ) {
+    inDiagonal++;
+    column++;
+    row++;
+  }
+
+  if (inDiagonal >= symbolsToWin) {
+    return true;
+  }
+
+  // Koukni doprava nahoru
+  inDiagonal = 1;
+  row = origin.row;
+  column = origin.column;
+  while (
+    column < boardSize - 1 &&
+    row > 0 &&
+    symbol === getSymbol(getField(row - 1, column + 1))
+  ) {
+    inDiagonal++;
+    column++;
+    row--;
+  }
+
+  // Koukni doleva dolu
+  row = origin.row;
+  column = origin.column;
+  while (
+    column > 0 &&
+    row < boardSize - 1 &&
+    symbol === getSymbol(getField(row + 1, column - 1))
+  ) {
+    inDiagonal++;
+    column--;
+    row++;
+  }
+
+  if (inDiagonal >= symbolsToWin) {
+    return true;
+  }
+
   return false;
 };
-
-/* const i18n = {
-  circle: 'kolečko',
-  cross: 'křížek',
-}; */
 
 for (let i = 0; i < gameFields.length; i++) {
   gameFields[i].addEventListener('click', (event) => {
     addSymbol(event);
     if (isWinningMove(event.target)) {
       const winningMessage = () => {
-        alert(`${whoPlays} wins, congratulations :)`);
+        if (confirm(`${whoPlays} wins, congratulations :)`)) {
+          location.reload();
+        }
       };
       setTimeout(winningMessage, 100);
     } else {
